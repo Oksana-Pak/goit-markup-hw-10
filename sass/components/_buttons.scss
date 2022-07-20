@@ -1,0 +1,27 @@
+.button {
+  min-width: 200px;
+
+  @include fonts(700, $secondary-font-size, 30px);
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &--primary {
+    display: block;
+    margin: 0 auto;
+
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: color var(--anim-slow);
+  }
+
+  &--primary:hover,
+  &--primary:focus {
+    color: var(--contacts-color);
+  }
+}

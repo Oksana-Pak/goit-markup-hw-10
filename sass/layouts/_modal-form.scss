@@ -1,0 +1,65 @@
+.form__title {
+  margin-bottom: 12px;
+  @include fonts(700, 20px, 23px);
+  color: var(--title-text-color);
+  text-align: center;
+}
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form__label {
+  margin-bottom: 4px;
+}
+.form__container {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form__input {
+  padding: 11px 12px 11px 42px;
+}
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill var(--anim-slow);
+
+  .form__input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+.form__textarea {
+  padding: 12px 16px;
+  height: 120px;
+}
+.form__checkbox {
+  @include centeredFlex(space-evenly, center);
+
+  margin-bottom: 30px;
+}
+.checkbox__agreement {
+  @include fonts(null, $primary-font-size, 24px);
+
+  user-select: none;
+}
+.checkbox__link {
+  @include fonts(null, $primary-font-size, 24px);
+
+  color: var(--accent-color);
+}
+.form__button {
+  display: block;
+  margin: 0 auto;
+
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color var(--anim-slow);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

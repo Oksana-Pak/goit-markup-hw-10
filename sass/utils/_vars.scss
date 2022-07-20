@@ -1,0 +1,24 @@
+:root {
+  --primary-text-color: #757575;
+  --first-logo-color: #000000;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --title-bg-color: #2f303a;
+  --bg-image: #c4c4c4;
+  --primary-bg-color: #f5f4fa;
+  --primary-white-color: #ffffff;
+  --contacts-color: rgba(255, 255, 255, 0.6);
+  --border-color: #eeeeee;
+  --container-color: #ececec;
+  --overlay-color: rgba(33, 150, 243, 0.9);
+  --modal-bg-color: rgba(0, 0, 0, 0.1);
+  --icon-color: #afb1b8;
+
+  --item: 3;
+  --indent: 30px;
+
+  --anim-slow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$primary-font-size: 14px;
+$secondary-font-size: 16px;

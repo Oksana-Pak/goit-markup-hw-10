@@ -1,0 +1,46 @@
+.exemples {
+  display: block;
+
+  transition: box-shadow var(--anim-slow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .overlay__description,
+  &:focus .overlay__description {
+    transform: translateY(0);
+  }
+
+  &__content {
+    padding: 20px 24px;
+
+    border: 1px solid var(--border-color);
+    border-top: none;
+  }
+}
+.exemples__title {
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+  @include fonts(null, 18px, 36px);
+  letter-spacing: 0.06em;
+
+  transition: color var(--anim-slow);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.exemples__text {
+  color: var(--primary-text-color);
+  @include fonts(null, $secondary-font-size, 30px);
+
+  transition: color var(--anim-slow);
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}

@@ -1,0 +1,21 @@
+.checkbox-custom {
+  @include centeredFlex(center, center, $type: inline-flex);
+
+  width: 16px;
+  height: 15px;
+  outline: 2px solid var(--title-text-color);
+  outline-offset: -2px;
+  border-radius: 2px;
+
+  transition: outline-color var(--anim-slow), background-color var(--anim-slow),
+    box-shadow var(--anim-slow);
+
+  .checkbox__input:checked + & {
+    background-color: var(--accent-color);
+    outline-color: var(--accent-color);
+  }
+
+  .checkbox__input:focus + & {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+}

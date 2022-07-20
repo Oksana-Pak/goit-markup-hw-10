@@ -1,0 +1,74 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--title-bg-color);
+
+  &__container {
+    @include centeredFlex(space-between, baseline);
+  }
+
+  &__contacts {
+    margin-top: 20px;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-bottom: 9px;
+  }
+
+  &-text {
+    @include fonts(700, $primary-font-size, 16px);
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+  }
+}
+
+.footer__link {
+  @include fonts(inherit, $primary-font-size, 24px);
+  font-style: normal;
+  letter-spacing: inherit;
+
+  &--color {
+    color: var(--contacts-color);
+  }
+  &--white {
+    color: var(--primary-white-color);
+  }
+}
+
+.footer-join__footer-text {
+  margin-bottom: 20px;
+}
+
+.footer-sighup__container {
+  display: flex;
+}
+.footer-sighup__label {
+  margin-right: 12px;
+}
+.footer-sighup__input {
+  width: 358px;
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+
+  &::placeholder {
+    @include fonts(null, $secondary-font-size, 20px);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-sighup__wrapper {
+  position: relative;
+}
+.footer-sighup__button {
+  padding: 10px 62px 10px 29px;
+}
+.footer-sighup__icon {
+  position: absolute;
+  bottom: 0;
+  right: 28px;
+  transform: translateY(-50%);
+}

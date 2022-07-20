@@ -1,0 +1,38 @@
+.clients {
+  @include section(94px);
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.clients-group {
+  --item: 6;
+
+  border-radius: 4px;
+  outline: 1px solid var(--icon-color);
+  outline-offset: -1px;
+
+  transition: outline var(--anim-slow);
+
+  &__link {
+    @include centeredFlex(center, center);
+
+    height: 92px;
+    color: var(--icon-color);
+  }
+  &__icon {
+    fill: currentColor;
+
+    transition: fill var(--anim-slow);
+  }
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--accent-color);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--accent-color);
+  }
+}

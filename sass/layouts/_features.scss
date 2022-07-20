@@ -1,0 +1,26 @@
+.features {
+  @include section(94px);
+
+  &__list {
+    --item: 4;
+  }
+  &__wrapper {
+    height: 120px;
+
+    @include centeredFlex(center, center);
+
+    margin-bottom: 30px;
+
+    background-color: var(--primary-bg-color);
+  }
+  &__title {
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+    @include fonts(null, $primary-font-size, 16px);
+    text-transform: uppercase;
+  }
+  &__description {
+    @include fonts(null, $primary-font-size, 24px);
+  }
+}

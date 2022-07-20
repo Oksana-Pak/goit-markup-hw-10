@@ -1,0 +1,18 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+  &__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform var(--anim-slow);
+
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    color: var(--primary-white-color);
+    @include fonts(null, 18px, 28px);
+  }
+}
