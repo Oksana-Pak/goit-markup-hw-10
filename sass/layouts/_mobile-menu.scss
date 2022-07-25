@@ -5,6 +5,9 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
+
+  transition: --anim-slow;
+
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -12,9 +15,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-.mobile-menu__burger {
-  transition: --anim-slow;
 }
 
 .mobile-menu {
@@ -27,7 +27,6 @@
   height: 100vh;
 
   background-color: var(--primary-white-color);
-  // @include section(48px);
   overflow: auto;
 
   transition: transform var(--anim-slow);
@@ -40,25 +39,25 @@
   position: absolute;
   top: 10px;
   right: 15px;
+
   padding: 0;
   border: none;
   width: 40px;
   height: 40px;
   background-color: transparent;
+
+  transition: --anim-slow;
+
   &:hover,
   &:focus {
     fill: var(--accent-color);
   }
-
-  // transition: --anim-slow;
 }
 .mobile-container {
   max-width: 430px;
   height: 100%;
   margin: 0 auto;
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // @include section(48px);
+
   padding: 48px 15px;
 
   @include centeredFlex(space-between, null);

@@ -1156,6 +1156,7 @@ p {
   width: 40px;
   height: 40px;
   background-color: transparent;
+  transition: --anim-slow;
 }
 .mobile-menu__open:hover, .mobile-menu__open:focus {
   fill: var(--accent-color);
@@ -1164,10 +1165,6 @@ p {
   .mobile-menu__open {
     display: none;
   }
-}
-
-.mobile-menu__burger {
-  transition: --anim-slow;
 }
 
 .mobile-menu {
@@ -1199,6 +1196,7 @@ p {
   width: 40px;
   height: 40px;
   background-color: transparent;
+  transition: --anim-slow;
 }
 .mobile-menu__close:hover, .mobile-menu__close:focus {
   fill: var(--accent-color);
