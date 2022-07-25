@@ -1,18 +1,55 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include section(60px);
+
   background-color: var(--title-bg-color);
 
   &__container {
-    @include centeredFlex(space-between, baseline);
-  }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
 
+    @media screen and (min-width: 1200px) {
+      @include centeredFlex(space-between, baseline);
+    }
+  }
+  &__wrap {
+    @media screen and (min-width: 768px) {
+      @include centeredFlex(space-around, baseline);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      @include centeredFlex(null, null);
+    }
+  }
+  &__wrapper {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+  &-join {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
+  }
   &__contacts {
     margin-top: 20px;
   }
 
   &__item:not(:last-of-type) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &-text {
@@ -41,13 +78,21 @@
 }
 
 .footer-sighup__container {
-  display: flex;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .footer-sighup__label {
-  margin-right: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 .footer-sighup__input {
-  width: 358px;
+  width: 100%;
   padding: 15px 16px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -58,17 +103,30 @@
     @include fonts(null, $secondary-font-size, 20px);
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-sighup__wrapper {
   position: relative;
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 .footer-sighup__button {
-  padding: 10px 62px 10px 29px;
+  @include centeredFlex(null, center);
+
+  padding: 10px 28px 10px 29px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer-sighup__icon {
-  position: absolute;
-  bottom: 0;
-  right: 28px;
-  transform: translateY(-50%);
+  // position: absolute;
+  // bottom: 0;
+  // right: 28px;
+  // right: 168px;
+  margin-left: 10px;
+  // transform: translateY(-50%);
 }

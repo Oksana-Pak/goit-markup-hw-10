@@ -1,7 +1,22 @@
-.exemples {
-  display: block;
+.portfolio__card {
+  --item: 1;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    --item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --item: 3;
+  }
+}
+
+.exemples {
   transition: box-shadow var(--anim-slow);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &:hover,
   &:focus {
@@ -19,6 +34,10 @@
 
     border: 1px solid var(--border-color);
     border-top: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-grow: 1;
+    }
   }
 }
 .exemples__title {

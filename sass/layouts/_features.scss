@@ -1,8 +1,19 @@
 .features {
-  @include section(94px);
+  @include section(60px);
 
-  &__list {
-    --item: 4;
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
+
+  &__item {
+    --item: 1;
+
+    @media screen and (min-width: 768px) {
+      --item: 2;
+    }
+    @media screen and (min-width: 1200px) {
+      --item: 4;
+    }
   }
   &__wrapper {
     height: 120px;
@@ -15,10 +26,15 @@
   }
   &__title {
     margin-bottom: 10px;
+    text-align: center;
 
     color: var(--title-text-color);
     @include fonts(null, $primary-font-size, 16px);
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__description {
     @include fonts(null, $primary-font-size, 24px);
