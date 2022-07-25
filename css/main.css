@@ -415,6 +415,10 @@ p {
   }
 }
 
+.menu-container {
+  display: none;
+}
+
 .nav__item:not(:last-of-type) {
   margin-right: 50px;
 }
@@ -1166,15 +1170,6 @@ p {
   transition: --anim-slow;
 }
 
-.mobile-menu__close {
-  opacity: 0;
-  transition: --anim-slow;
-}
-
-.menu-container {
-  display: none;
-}
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -1193,6 +1188,20 @@ p {
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+.mobile-menu__close:hover, .mobile-menu__close:focus {
+  fill: var(--accent-color);
 }
 
 .mobile-container {

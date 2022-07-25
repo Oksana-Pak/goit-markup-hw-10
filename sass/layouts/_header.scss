@@ -18,7 +18,9 @@
     }
   }
 }
-
+.menu-container {
+  display: none;
+}
 .nav {
   // display: none;
   // @include centeredFlex(null, center);
