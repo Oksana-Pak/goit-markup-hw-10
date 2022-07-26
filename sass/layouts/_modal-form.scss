@@ -1,8 +1,12 @@
 .form__title {
   margin-bottom: 12px;
-  @include fonts(700, 20px, 23px);
+  @include fonts(700, 20px, 30px);
   color: var(--title-text-color);
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(null, 20px, 23px);
+  }
 }
 .form__contacts {
   display: flex;
@@ -40,14 +44,20 @@
   margin-bottom: 30px;
 }
 .checkbox__agreement {
-  @include fonts(null, $primary-font-size, 24px);
-
+  @include fonts(null, 12px, $primary-font-size);
   user-select: none;
+  @media screen and (min-width: 1200px) {
+    @include fonts(null, $primary-font-size, 24px);
+  }
 }
 .checkbox__link {
-  @include fonts(null, $primary-font-size, 24px);
+  @include fonts(null, 12px, $primary-font-size);
 
   color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    @include fonts(null, $primary-font-size, 24px);
+  }
 }
 .form__button {
   display: block;

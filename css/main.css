@@ -279,6 +279,7 @@ p {
   visibility: visible;
   -webkit-transition: opacity var(--anim-slow), visibility var(--anim-slow);
   transition: opacity var(--anim-slow), visibility var(--anim-slow);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -287,14 +288,14 @@ p {
 }
 
 .modal {
+  max-width: 450px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -304,6 +305,11 @@ p {
   transition: opacity var(--anim-slow), -webkit-transform var(--anim-slow);
   transition: transform var(--anim-slow), opacity var(--anim-slow);
   transition: transform var(--anim-slow), opacity var(--anim-slow), -webkit-transform var(--anim-slow);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 .backdrop.is-hidden .modal {
   opacity: 0;
@@ -1048,6 +1054,7 @@ p {
 }
 
 .exemples {
+  display: block;
   -webkit-transition: -webkit-box-shadow var(--anim-slow);
   transition: -webkit-box-shadow var(--anim-slow);
   transition: box-shadow var(--anim-slow);
@@ -1113,9 +1120,15 @@ p {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: var(--title-text-color);
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .form__title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form__contacts {
@@ -1174,18 +1187,30 @@ p {
 }
 
 .checkbox__agreement {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (min-width: 1200px) {
+  .checkbox__agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .checkbox__link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__button {

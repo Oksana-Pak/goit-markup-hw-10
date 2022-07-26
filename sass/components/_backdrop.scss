@@ -9,6 +9,8 @@
   opacity: 1;
   visibility: visible;
   transition: opacity var(--anim-slow), visibility var(--anim-slow);
+  overflow-y: scroll;
+
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
