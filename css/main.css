@@ -1203,7 +1203,8 @@ p {
 }
 
 .mobile-container {
-  max-width: 430px;
+  position: relative;
+  max-width: 480px;
   height: 100%;
   margin: 0 auto;
   padding: 48px 15px;
