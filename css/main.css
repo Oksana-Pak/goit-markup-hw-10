@@ -129,8 +129,15 @@ p {
   color: var(--accent-color);
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo--primary {
   color: var(--first-logo-color);
@@ -405,6 +412,7 @@ p {
   .header__logo {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -418,13 +426,20 @@ p {
 .menu-container {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .nav__item:not(:last-of-type) {
   margin-right: 50px;
-}
-.nav__icon {
-  margin-right: 10px;
-  fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
@@ -434,18 +449,12 @@ p {
     display: flex;
   }
 }
-.nav__list--left {
-  margin-left: auto;
-}
 
 .nav__link {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -464,6 +473,49 @@ p {
 }
 .nav__link--current {
   color: var(--accent-color);
+}
+
+.contacts {
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+.contacts__icon {
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    margin-right: 10px;
+  }
 }
 
 .hero {
