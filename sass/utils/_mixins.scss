@@ -3,7 +3,8 @@
 @mixin fonts($fw, $fs, $lh) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: decimal-round($lh / $fs);
+  // line-height: decimal-round($lh / $fs);
+  line-height: calc($lh / $fs);
 }
 
 @mixin section($padding) {

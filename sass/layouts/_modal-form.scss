@@ -39,19 +39,23 @@
   height: 120px;
 }
 .form__checkbox {
-  @include centeredFlex(space-evenly, center);
-
+  display: block;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .checkbox__agreement {
   @include fonts(null, 12px, $primary-font-size);
   user-select: none;
+
   @media screen and (min-width: 1200px) {
     @include fonts(null, $primary-font-size, 24px);
   }
 }
 .checkbox__link {
-  @include fonts(null, 12px, $primary-font-size);
+  @include fonts(null, 11px, $primary-font-size);
 
   color: var(--accent-color);
 
