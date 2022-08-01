@@ -9,7 +9,7 @@
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero/hero-mob.jpg');
 
-  // Для ретіна екранів мобільна версія
+  // Retina mobile
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -22,7 +22,7 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/hero-tab.jpg');
 
-    // Для ретіна екранів планшетна версія
+    // Retina tablet
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -36,7 +36,7 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/hero-desk.jpg');
 
-    // Для ретіна екранів десктопна версія
+    // Retina desktop
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
