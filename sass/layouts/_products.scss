@@ -1,0 +1,118 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.products__label {
+  padding-bottom: 15px;
+
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  color: #ffa5ba;
+  @media screen and (min-width: 772px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04;
+  }
+}
+.products__title {
+  padding-bottom: 148px;
+
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (min-width: 772px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06;
+  }
+}
+.products__list {
+  --item: 1;
+}
+.products__item {
+  position: relative;
+  //   min-height: 489px;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  padding-left: 61px;
+  padding-right: 59px;
+  border-radius: 24px;
+}
+.products__item:nth-child(1) {
+  background-color: #ffb8ca;
+}
+.products__item:nth-child(2) {
+  background-color: #f0d1a5;
+}
+.products__item:nth-child(3) {
+  background-color: #c2e297;
+}
+.products__item:not(:last-of-type) {
+  margin-bottom: 140px;
+}
+.products__item::before {
+  content: '';
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.products__item:nth-child(1)::before {
+  background-image: url('../images/products/product-3mob.png');
+}
+.products__item:nth-child(2)::before {
+  background-image: url('../images/products/product-2mob.png');
+}
+.products__item:nth-child(3)::before {
+  background-image: url('../images/products/product-1mob.png');
+}
+.products__subtitle {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products__subtitle::after {
+  content: '';
+  display: block;
+  margin: 32px auto;
+  width: 26px;
+  border-bottom: 6px dotted #ffffff;
+}
+.products__description {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.04;
+  text-align: center;
+  color: #ffffff;
+  @media screen and (min-width: 772px) {
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
