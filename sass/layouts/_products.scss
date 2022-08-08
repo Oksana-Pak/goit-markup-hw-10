@@ -197,7 +197,19 @@
     line-height: 1.75;
   }
 }
-.products__icon {
-  display: block;
+.products__wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
+}
+.products__icon {
+  fill: #d41443;
+}
+.products__wrap:hover .products__item {
+  transform: rotate(180deg);
 }
