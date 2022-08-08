@@ -9,7 +9,7 @@
   line-height: 1.17;
   text-align: center;
   color: #ffa5ba;
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
   }
@@ -28,7 +28,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #d41443;
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 158px;
     font-size: 48px;
   }
@@ -41,7 +41,7 @@
 }
 .products__list {
   --indent: 0px;
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     --indent: 16px;
   }
   @media screen and (min-width: 1200px) {
@@ -50,11 +50,10 @@
 }
 .products__item {
   position: relative;
-  //   min-height: 489px;
   padding: 160px 39px 41px 40px;
   border-radius: 24px;
   --item: 1;
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     --item: 3;
     // padding: 118px 32px 40px;
     padding: 118px 35px 40px;
@@ -72,7 +71,7 @@
 .products__item:nth-child(3) {
   background-color: #c2e297;
 }
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 767px) {
   .products__item:not(:last-of-type) {
     margin-bottom: 140px;
   }
@@ -88,7 +87,7 @@
 
   background-repeat: no-repeat;
   background-size: contain;
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     width: 224px;
     height: 224px;
   }
@@ -104,7 +103,7 @@
   // Retina mobile
   @include retinaScreen('../images/products/product-1mob@2x.png');
 
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     background-image: url('../images/products/product-1tab.png');
 
     // Retina tablet
@@ -124,7 +123,7 @@
   // Retina mobile
   @include retinaScreen('../images/products/product-2mob@2x.png');
 
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     background-image: url('../images/products/product-2tab.png');
 
     // Retina tablet
@@ -143,7 +142,7 @@
   // Retina mobile
   @include retinaScreen('../images/products/product-3mob@2x.png');
 
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     background-image: url('../images/products/product-3tab.png');
 
     // Retina tablet
@@ -188,7 +187,7 @@
   letter-spacing: 0.04;
   text-align: center;
   color: #ffffff;
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
     line-height: 1.76;
   }
   @media screen and (min-width: 1200px) {
@@ -209,7 +208,4 @@
 }
 .products__icon {
   fill: #d41443;
-}
-.products__wrap:hover .products__item {
-  transform: rotate(180deg);
 }
